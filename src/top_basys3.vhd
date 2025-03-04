@@ -63,13 +63,10 @@ entity top_basys3 is
 	port(
 		-- 7-segment display segments (cathodes CG ... CA)
 		seg		:	out std_logic_vector(6 downto 0);  -- seg(6) = CG, seg(0) = CA
-
 		-- 7-segment display active-low enables (anodes)
 		an      :	out std_logic_vector(3 downto 0);
-
 		-- Switches
 		sw		:	in  std_logic_vector(3 downto 0);
-		
 		-- Buttons
 		btnC	:	in	std_logic
 
